@@ -1,0 +1,3 @@
+/*
+ * Carracci: UML Editing app
+ */
