@@ -1,16 +1,17 @@
 {
-	"name": "carracci-2",
-	"version": "1.0.0",
-	"description": "UML editor",
-	"main": "main.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "electron ."
-	},
-	"keywords": ["UML"],
-	"author": "Richard Hunter",
-	"license": "ISC",
-	"devDependencies": {
-		"electron": "^18.2.0"
-	}
+  "name": "carracci-2",
+  "version": "1.0.0",
+  "description": "UML editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "start-web": "http-server ./web"
+  },
+  "keywords": ["UML"],
+  "author": "Richard Hunter",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
 }
