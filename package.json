@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "start-web": "http-server ./web"
+    "start-web": "http-server ./web",
+    "lint": "eslint  --quiet --global process -- preload.js web/**"
   },
   "keywords": ["UML"],
   "author": "Richard Hunter",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^18.2.0"
+    "electron": "^18.2.0",
+    "eslint": "^8.15.0"
   }
 }
