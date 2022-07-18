@@ -1,6 +1,5 @@
 const VISIBILITY_EL_ID = "visibility";
 const NAME_EL_ID = "name";
-const TYPE_EL_ID = "type";
 const RETURN_TYPE_EL_ID = "return-type";
 const ARGS_EL_ID = "args";
 
@@ -103,8 +102,8 @@ export class UMLClassMethod extends HTMLElement {
         nameEl.remove();
       }
 
-      if (argEl) {
-        argel.remove();
+      if (argsEl) {
+        argsEl.remove();
       }
     }
 

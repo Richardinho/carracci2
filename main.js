@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, Menu } = require("electron");
 const path = require("path");
 
 const createWindow = () => {
@@ -10,7 +10,29 @@ const createWindow = () => {
     },
   });
 
+  const menu = Menu.buildFromTemplate([
+    {
+      label: app.name,
+      submenu: [{ role: "about" }],
+    },
+    {
+      label: "File",
+      submenu: [
+        {
+          label: "Create Diagram",
+          click: () => {
+            console.log("create a diagram");
+          },
+        },
+      ],
+    },
+  ]);
+
+  Menu.setApplicationMenu(menu);
+
   win.loadFile("./web/index.html");
+
+  win.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {
